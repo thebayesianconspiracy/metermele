@@ -1,8 +1,9 @@
 import axios from 'axios';
 import _ from 'lodash';
 import queryString from 'query-string';
+import config from '../../config.json';
 
-export const SERVER = 'http://ppsreejith.net:9999';
+export const SERVER = `${config.server.protocol}://${config.server.host}:${config.server.port}`;
 
 const decideRequest = (prom, resolve, reject) =>
   prom
