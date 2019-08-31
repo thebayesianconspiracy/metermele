@@ -1,6 +1,6 @@
 .PHONY: build build-alpine clean test help default
 
-BIN_NAME=server
+BIN_NAME=vahana
 DOCKER_COMPOSE=containers/docker-compose.yml
 
 help:
@@ -19,7 +19,7 @@ help:
 	@echo '    docker-compose 1.24.1'
 	@echo
 
-setup-and-run: stop-infra start-infra build delay start
+setup-and-run: stop-infra start-infra build delay migrate start
 
 start-infra:
 	@echo "Setting up Infra requirements for ${BIN_NAME}"

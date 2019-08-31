@@ -1,18 +1,13 @@
-# vahana
+# Vahana - Server
 
-A solution to urban congestion
+## Getting Started
 
-## Getting started
+This project requires (and is tested on) Go `version 1.12.5` and docker-compose  `version 1.24.1`.
 
-This project requires Go to be installed. On OS X with Homebrew you can just run `brew install go`.
+Run `make` to see the list of commands available
+The configuration of the project can be managed through the `config.yaml` file.
 
-Running it then should be as simple as:
-
+To set up infrastructure, build, and run the server, use:
 ```console
-$ make
-$ ./bin/vahana
+$ make setup-and-run
 ```
-
-### Testing
-
-``make test``
