@@ -1,8 +1,9 @@
 import axios from 'axios';
 import _ from 'lodash';
 import queryString from 'query-string';
+import Config from 'react-native-config';
 
-export const SERVER = 'http://ppsreejith.net:9999';
+export const SERVER = Config.SERVER_URL;
 
 const decideRequest = (prom, resolve, reject) =>
   prom
