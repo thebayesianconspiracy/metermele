@@ -1,0 +1,9 @@
+host: 0.0.0.0
+port: 9999
+pg_host: localhost
+pg_port: 5740
+pg_user: pguser
+pg_pass: pgpass
+pg_db: saturn
+bid_default_range: 3
+bid_max_active_minutes: 500

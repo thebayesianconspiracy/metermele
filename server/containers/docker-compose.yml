@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: postgres:11.2
+    restart: always
+    volumes:
+      - ./data/psql:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "pguser"
+      POSTGRES_DB: "saturn"
+      POSTGRES_PASSWORD: "pgpass"
+    ports:
+      - "5740:5432"
